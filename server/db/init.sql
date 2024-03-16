@@ -1,0 +1,11 @@
+CREATE TABLE "users" (
+    "id" SERIAL PRIMARY KEY,
+    "email" VARCHAR(255) UNIQUE NOT NULL,
+    "firstName" VARCHAR(255),
+    "lastName" VARCHAR(255),
+    "password" VARCHAR(255) NOT NULL,
+    "role" VARCHAR(50) NOT NULL,
+    "createdAt" TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    "active" BOOLEAN DEFAULT true
+);

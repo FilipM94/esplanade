@@ -1,0 +1,20 @@
+### get users
+GET http://localhost:8000/api/user/list
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxMDU3ODE0NCwiZXhwIjoxNzEwNTgxNzQ0fQ.tnA-3865Lx7txl8hgpzlOrKeGx0Ne6h9UUCm0U6K5nA
+
+### get user id = 1
+GET http://localhost:8000/api/user/1
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxMDU3ODE0NCwiZXhwIjoxNzEwNTgxNzQ0fQ.tnA-3865Lx7txl8hgpzlOrKeGx0Ne6h9UUCm0U6K5nA
+
+### save 
+POST http://localhost:8000/api/user
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsImlhdCI6MTcxMDU3ODE0NCwiZXhwIjoxNzEwNTgxNzQ0fQ.tnA-3865Lx7txl8hgpzlOrKeGx0Ne6h9UUCm0U6K5nA
+Content-Type: application/json
+
+{
+    "email": "user@mail.com",
+    "password": "user",
+    "firstName": "Ime",
+    "lastName": "Prezime",
+    "role": "user"
+}
